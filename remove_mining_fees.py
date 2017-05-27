@@ -5,12 +5,14 @@
 # https://github.com/DanMcInerney/cookiejack/blob/master/cookiejack.py
 
 import logging
-#logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 import nfqueue
 from scapy.all import *
 import os
 import re
+
+from os import path
 
 # https://forum.z.cash/t/about-dev-fees-and-how-to-remove-them/9600/36
 os.system('iptables -A OUTPUT -p tcp --dport 9999 -j NFQUEUE --queue-num 0')
@@ -86,6 +88,7 @@ def main():
   except KeyboardInterrupt:
     q.unbind(socket.AF_INET)
     q.close()
-    os.system('./restart_iptables')
+    if path.exists('./restart_iptables'):
+      os.system('./restart_iptables')
 
 main()
