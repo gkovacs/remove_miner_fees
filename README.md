@@ -51,6 +51,10 @@ If you are using a miner different than claymore ethereum, you will need to figu
 
 [Geza Kovacs](https://github.com/gkovacs/)
 
+# Licence
+
+[GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
 # Donations
 
 ETH `0xb70fc6f9865ce18c20d90ebf067d9951918f8933`
