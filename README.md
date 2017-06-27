@@ -1,6 +1,6 @@
 # remove_miner_fees
 
-Removes miner fees using nfqueue. Tested on ubuntu 16.04 mining on nanopool with claymore dual ethereum miner for linux version 9.4.
+Removes miner fees using nfqueue. Tested on ubuntu 16.04 mining on nanopool with claymore dual ethereum miner for linux version 9.4. re
 
 # How does this work?
 
@@ -14,10 +14,10 @@ Disable ufw
 sudo ufw disable
 ```
 
-Install python-nfqueue
+Install python-nfqueue and python-scapy. Has been tested with python-nfqueue 0.5-1build2 (from ubuntu 16.04) and python-scapy 2.2.0-1 (both from the ubuntu 16.04 repositories), if using different versions you may need to modify the code as described [here](https://github.com/gkovacs/remove_miner_fees/issues/1)
 
 ```
-sudo apt-get install python-nfqueue
+sudo apt-get install python-nfqueue python-scapy
 ```
 
 Download the program and run it as root (nfqueue needs to be run as root). Keep it running in the background
