@@ -14,7 +14,7 @@ Disable ufw
 sudo ufw disable
 ```
 
-Install python-nfqueue and python-scapy. Has been tested with python-nfqueue 0.5-1build2 (from ubuntu 16.04) and python-scapy 2.2.0-1 (both from the ubuntu 16.04 repositories), if using different versions you may need to modify the code as described [here](https://github.com/gkovacs/remove_miner_fees/issues/1)
+Install python-nfqueue and python-scapy. Has been tested with python-nfqueue 0.5-1build2 and python-scapy 2.2.0-1 from the ubuntu 16.04 repositories, if using different versions you may need to modify the code as described [here](https://github.com/gkovacs/remove_miner_fees/issues/1)
 
 ```
 sudo apt-get install python-nfqueue python-scapy
